@@ -3,7 +3,16 @@
 /*
  * Приведение к булю на примере Boolean(value)
  */
-const name =  "Mango";
+const name = Boolean('Mango');
+// console.log('name :>> ', name);
+
+// console.log(Boolean(name)); //true
+// console.log(Boolean(10)); //true
+// console.log(Boolean(' ')); //true
+// console.log(Boolean('undefined')); //true
+// console.log(Boolean('false')); //true
+
+// ! 6 значениий которие приводятся к false
 
 // console.log(' 0 ->', Boolean(0));
 // console.log(' null ->', Boolean(null));
@@ -24,19 +33,15 @@ const name =  "Mango";
  * - Запинается на лжи
  * - Возвращает то, на чём запнулось или последний операнд
  */
-// console.log( 5 && 6 ); 
-// console.log( 0 && 6 );
-// console.log( 6 && 0 );
+//5  выражение && выражение && выражение && выражение && выражение && выражение;
+
+// console.log(5 && 6);
+// console.log(0 && 6);
+// console.log(6 && 0);
 // console.log(NaN && 4 && null && 'mango');
 
-
-
-// const num = prompt("введите число")
-// const message = 
-// console.log(num && "Все хорошо ви молодец!!!")
-// console.log(num && "Ви ввели некоректное число либо пустую строку")
-
-
+const age = 20;
+// console.log(age > 10 && age < 30); // true && true -> true
 
 /*
  * Логическое ИЛИ (оператор ||)
@@ -44,7 +49,9 @@ const name =  "Mango";
  * - Возвращает то, на чём запнулось или последний операнд
  */
 
-console.log(false || 5 || null || 0);
+// alert( && 2 && alert(3));
+
+// console.log(false || 5 || null || 0);
 
 /*
  * Логическое НЕ (оператор !)
