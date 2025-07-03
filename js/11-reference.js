@@ -28,27 +28,42 @@
 // console.log(b); // 5
 
 //1 =======================================================
-const a = ['Mango'];
+// const a = ['Mango'];
 // Так как a это массив, в b записывается ссылка на уже существующий
 // массив в памяти. Теперь a и b указывают на один и тот же массив.
-const b = a;
+// const b = a;
 
-console.log('a', a); // ["Mango"]
-console.log('b', b); // ["Mango"]
+// console.log('a', a); // ["Mango"]
+// console.log('b', b); // ["Mango"]
 
 // Изменим массив, добавив еще один элемент, используя указатель из a
-a.push('Poly');
-console.log(a); // ["Mango", "Poly"]
+// a.push('Poly');
+// console.log(a); // ["Mango", "Poly"]
 
 // b также изменилось, потому что b, как и a,
 // просто содержит ссылку на одно и то же место в памяти
-console.log(b); // ["Mango", "Poly"]
+// console.log(b); // ["Mango", "Poly"]
 
 // Результат повторяется
-b.push('Ajax');
-console.log(a); // ["Mango", "Poly", "Ajax"]
-console.log(b); // ["Mango", "Poly", "Ajax"]
+// b.push('Ajax');
+// console.log(a); // ["Mango", "Poly", "Ajax"]
+// console.log(b); // ["Mango", "Poly", "Ajax"]
 
-console.log(a === b);
+// console.log(a === b);
 
 // console.log([1] === [1]);
+
+let name = 'qwerty';
+console.log('name :>> ', name);
+
+name = 'asdf';
+console.log('name :>> ', name);
+
+const a = ['Mango'];
+console.log('a :>> ', a);
+
+a[1] = 'fghjkl';
+
+a.push('Poly');
+
+console.log('a :>> ', a);
